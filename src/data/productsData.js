@@ -62,6 +62,38 @@ const productsData = [
         title: "Canon EOS",
         price: 54500,
         quantity: 1,
+    },
+    {
+        id: 9,
+        img: "/images/prod9.jpg",
+        rating: "★★★★",
+        title: "Camera Stand",
+        price: 20000,
+        quantity: 1,
+    },
+    {
+        id: 10,
+        img: "/images/prod10.png",
+        rating: "★★★★",
+        title: "Camera Stand",
+        price: 22000,
+        quantity: 1,
+    },
+    {
+        id: 11,
+        img: "/images/prod11.jpg",
+        rating: "★★★★",
+        title: "Camera Stand",
+        price: 25000,
+        quantity: 1,
+    },
+    {
+        id: 12,
+        img: "/images/prod12.jpg",
+        rating: "★★★★",
+        title: "Camera Stand",
+        price: 30000,
+        quantity: 1,
     }
 ];
 
