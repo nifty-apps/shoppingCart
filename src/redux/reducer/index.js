@@ -1,3 +1,4 @@
+import Swal from "sweetalert2";
 import { ADD_TO_CART, DECREMENT, INCREMENT, REMOVE_ITEM, TOGGLE_CART } from "../action/actionTypes";
 
 // Load cart data from local storage if available
@@ -20,6 +21,13 @@ const cartReducer = (state = initialState, action) => {
             if (!itemExist) {
                 const updatedCart = [...state.cart, action.payload];
                 localStorage.setItem("cart", JSON.stringify(updatedCart)); 
+                Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: 'Successfully added',
+                    showConfirmButton: false,
+                    timer: 1500
+                  })
                 return {
                     ...state,
                     cart: updatedCart
@@ -36,6 +44,13 @@ const cartReducer = (state = initialState, action) => {
                     }
                 });
                 localStorage.setItem("cart", JSON.stringify(updatedCart)); 
+                Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'This item already added',
+                    showConfirmButton: false,
+                    timer: 1500
+                  })
                 return {
                     ...state,
                     cart: updatedCart
