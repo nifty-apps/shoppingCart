@@ -1,0 +1,62 @@
+/* Customer.css */
+
+/* Basic styles for the container */
+.container1 {
+      display: grid;
+      grid-gap: 30px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      width: 80%;
+      margin: 0px auto;
+    }
+    
+    /* Card styles */
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: transform 0.2s;
+    }
+    
+    .card:hover {
+      transform: scale(1.05);
+    }
+    
+    .card-img-top {
+      max-height: 150px;
+      object-fit: cover;
+    }
+    
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    
+    .card-text {
+      font-size: 1rem;
+    }
+    
+    /* Responsive grid for large devices (4 columns) */
+    @media (min-width: 992px) {
+      .container1 {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns for large devices */
+      }
+    }
+    
+    /* Responsive grid for medium devices (3 columns) */
+    @media (max-width: 991px) and (min-width: 768px) {
+      .container1 {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for medium devices */
+      }
+    }
+    
+    /* Responsive grid for small devices (1 column) */
+    @media (max-width: 767px) {
+      .container1 {
+        grid-template-columns: repeat(1, 1fr); /* 1 column for small devices */
+      }
+    }
+    
+    /* Additional styles can be added as needed */
+    
