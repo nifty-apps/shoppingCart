@@ -7,7 +7,7 @@ const Header = () => {
 
     const { cart } = useSelector(state => state.cartReducer);
     const dispatch = useDispatch();
-
+    const totalProduct = cart.reduce((accumulator, currentValue) => accumulator + currentValue.quantity, 0)
     return (
         <>
             <header id="header">
@@ -21,7 +21,7 @@ const Header = () => {
                                 onClick={() => dispatch(toggleCart(true))}
                             >
                                 <img src="/images/bag-icon.svg" alt="bag-icon" />
-                                {cart.length ? <span className="badge">{cart.length}</span> : null}
+                                <span className="badge">{totalProduct}</span> 
                             </div>
                         </div>
                     </div>
