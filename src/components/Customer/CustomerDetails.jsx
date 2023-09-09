@@ -94,6 +94,7 @@ const CustomerGrid = () => {
               <p className="card-text">Email: {customer.email}</p>
               <p className="card-text">Phone: {customer.phone}</p>
               <p className="card-text">Address: {customer.address}</p>
+              <button>Details</button>
             </div>
           </div>
         </div>
