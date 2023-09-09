@@ -34,6 +34,9 @@ const Cart = () => {
 
                         <div className="cart_body">
                             {
+                                cart.length === 0 && <span>No item added yet</span>
+                            }
+                            {
 
                                 cart.map(item => {
                                     const { id, img, title, price, quantity } = item;
