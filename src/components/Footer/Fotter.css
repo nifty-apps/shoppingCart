@@ -1,0 +1,43 @@
+/* Footer.css */
+
+/* Basic styles for the footer container */
+footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+    }
+    
+    /* Styles for the container */
+    .container {
+      text-align: center;
+    }
+    
+    /* Styles for the contact and shopping cart sections */
+    .col-md-6 {
+      margin-bottom: 20px;
+    }
+    
+    h3 {
+      font-size: 1.5rem;
+    }
+    
+    p {
+      font-size: 1rem;
+      margin: 5px 0;
+    }
+    
+    /* Styles for the copyright text */
+    p.copyright {
+      font-size: 0.8rem;
+    }
+    
+    /* Styles for links in the footer */
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+    
