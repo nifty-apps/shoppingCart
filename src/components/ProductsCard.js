@@ -15,9 +15,9 @@ const ProductsCard = (props) => {
                 <figure>
                     <img src={img} alt="item-img" />
                 </figure>
-                <strong className="rating">{rating}</strong>
                 <h4 className="title">{title}</h4>
-                <h3 className="price">tk. {price.toLocaleString()}</h3>
+                <strong className="rating">{rating}</strong>
+                <h3 className="price">BDT {price.toLocaleString()}</h3>
                 <button
                     type="button"
                     className="btn"
