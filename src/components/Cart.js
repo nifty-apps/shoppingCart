@@ -33,6 +33,7 @@ const Cart = () => {
                         </div>
 
                         <div className="cart_body">
+                            {/* added this code */}
                             {
                                 cart.length === 0 && <span>No item added yet</span>
                             }
