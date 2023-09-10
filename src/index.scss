@@ -3,9 +3,9 @@
 /*--====== Variables ======--*/
 $main-font: "Roboto", sans-serif;
 $body-color: #fff;
-$text-color: #a9afc3;
+$text-color: #03050b;
 $text-light: #6c757d;
-$primary-color: #191c26;
+$primary-color: red;
 $secondary-color: #111319;
 $head-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 $foot-shadow: 0px -5px 15px rgba(0, 0, 0, 0.5);
@@ -46,7 +46,7 @@ $card-shadow: 10px 10px 15px rgba(0, 0, 0, 0.9),
 }
 
 html {
-  font-size: 16px;
+  font-size: 18px;
   scroll-behavior: smooth;
 }
 
@@ -79,7 +79,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 500;
+  font-weight: 800;
 }
 
 ul {
@@ -127,6 +127,8 @@ svg {
   position: fixed;
   top: 0;
   left: 0;
+  color: #fff;
+  font-weight: 900;
   width: 100%;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -142,7 +144,7 @@ svg {
 
   .badge {
     display: inline-block;
-    background-color: darkred;
+    background-color: rgb(181, 4, 4);
     color: #fff;
     line-height: 1;
     font-size: 0.8rem;
@@ -168,8 +170,9 @@ svg {
 }
 
 .product_card {
-  @include bordered(1px, $text-color);
+  @include bordered(3px, $text-color);
   padding-top: 1rem;
+  border-radius: 10px;
   box-shadow: $card-shadow;
   overflow: hidden;
 
@@ -178,7 +181,7 @@ svg {
     max-width: 200px;
   }
   &:hover {
-    border: 1px solid mediumaquamarine;
+    border: 3px solid red;
   }
   .rating {
     color: sandybrown;
@@ -199,13 +202,14 @@ svg {
     background-color: $primary-color;
     width: 100%;
     margin-top: 1rem;
+    color: #fff;
     padding: 0.6rem 0;
     font-size: 1rem;
     transition: color 0.3s ease;
 
     &:hover {
       color: #eee;
-      background-color: mediumaquamarine;
+      background-color: red;
     }
 
     &.added {
