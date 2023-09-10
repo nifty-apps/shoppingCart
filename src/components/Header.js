@@ -10,7 +10,7 @@ const Header = () => {
 
     return (
         <>
-            <header id="header">
+            <header id="header" style={{backgroundColor:"#435334"}}>
                 <div className="container">
                     <div className="navbar">
                         <h4>Shopping Cart</h4>
