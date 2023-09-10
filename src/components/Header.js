@@ -13,7 +13,8 @@ const Header = () => {
             <header id="header">
                 <div className="container">
                     <div className="navbar">
-                        <h4>Shopping Cart</h4>
+                        {/* changes Shopping card title */}
+                        <h4>Nazmul Shopping Cart</h4>
                         <div className="nav_menu">
                             <div
                                 title="Cart"
