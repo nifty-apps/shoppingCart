@@ -178,6 +178,7 @@ svg {
     padding-top: 1rem;
     box-shadow: $card-shadow;
     overflow: hidden;
+    border-radius: 0.5rem;
 
     img {
         width: 50%;
@@ -211,7 +212,9 @@ svg {
 
         &:hover {
             color: #eee;
-            background-color: mediumaquamarine;
+            background-color: rgb(11, 112, 78);
+            transition: ease-in-out;
+            transition-duration: 0.3s;
         }
 
         &.added {
