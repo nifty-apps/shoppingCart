@@ -11,8 +11,8 @@ $secondary-color: #111319;
 $head-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 $foot-shadow: 0px -5px 15px rgba(0, 0, 0, 0.5);
 $card-shadow: 10px 10px 15px rgba(0, 0, 0, 0.9),
-inset 10px 10px 60px rgba(0, 0, 0, 0.3),
-inset -10px -10px 60px rgba(0, 0, 0, 0.3);
+    inset 10px 10px 60px rgba(0, 0, 0, 0.3),
+    inset -10px -10px 60px rgba(0, 0, 0, 0.3);
 
 
 /*--====== Mixins ======--*/
@@ -156,6 +156,40 @@ svg {
     }
 }
 
+// dropdwon
+
+.dropdown {
+    margin-bottom: 40px;
+
+}
+
+.dropdown-menu {
+    position: absolute;
+
+}
+
+.dropdown-item,
+.dropdown,
+.btn-secondary {
+    background-color: #191c26;
+    color: #a9afc3;
+    display: block;
+    padding: 8px 18px;
+    font-size: large;
+}
+
+.dropdown-item {
+    width: 200px;
+    text-align: left;
+}
+.dropdown-item:hover{
+    background-color: #6c757d;
+}
+
+.btn-secondary img {
+    height: 40px;
+    color: #a9afc3;
+}
 
 /*--====== Home / Products Section ======--*/
 #home {
@@ -183,9 +217,11 @@ svg {
         width: 50%;
         max-width: 200px;
     }
+
     &:hover {
-       border:1px solid mediumaquamarine
+        border: 1px solid mediumaquamarine
     }
+
     .rating {
         color: sandybrown;
         font-size: 0.8rem;
