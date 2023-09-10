@@ -9,11 +9,12 @@ const Header = () => {
     const dispatch = useDispatch();
 
     return (
+        // Shopping Cart Component
         <>
             <header id="header">
                 <div className="container">
                     <div className="navbar">
-                        <h4>Shopping Cart</h4>
+                        <h4>Dashboard</h4>
                         <div className="nav_menu">
                             <div
                                 title="Cart"
