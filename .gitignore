@@ -1,1 +1,10 @@
+# .gitignore
+
+# Exclude local node_modules
 node_modules
+
+<<<<<<< main
+other specific exclusions or rules here
+=======
+
+>>>>>>> main
