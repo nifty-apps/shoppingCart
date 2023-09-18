@@ -172,6 +172,7 @@ svg {
   padding-top: 1rem;
   box-shadow: $card-shadow;
   overflow: hidden;
+  border-radius: 8px;
 
   img {
     width: 50%;
@@ -202,6 +203,11 @@ svg {
     padding: 0.6rem 0;
     font-size: 1rem;
     transition: color 0.3s ease;
+    @include bordered(1px, $text-color);
+    padding-top: 1rem;
+    box-shadow: $card-shadow;
+    overflow: hidden;
+    border-radius: 8px;
 
     &:hover {
       color: #eee;
@@ -210,6 +216,40 @@ svg {
 
     &.added {
       color: green;
+      border: 1px solid mediumaquamarine;
+      background-color: #66cdab42;
+    }
+    .rating {
+      color: sandybrown;
+      font-size: 0.8rem;
+      letter-spacing: 1.2px;
+    }
+
+    .title {
+      font-size: 1.1rem;
+      margin: 0.6rem 0;
+    }
+
+    .price {
+      font-weight: bold;
+    }
+
+    .btn {
+      background-color: #66cdabcc;
+      width: 100%;
+      margin-top: 1rem;
+      padding: 0.6rem 0;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+      color: #000;
+      &:hover {
+        color: #000000;
+        background-color: #69ffcd; // changed by akther uz zaman
+      }
+
+      &.added {
+        color: green;
+      }
     }
   }
 }
